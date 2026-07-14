@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用 Markdown 写博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #ffffff;
+            color: #222;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        /* 外层容器 */
+        .blog-container {
+            width: 100%;
+        }
+        /* 博客头部 Front Matter 区域 */
+        .blog-header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .blog-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .blog-meta {
+            display: flex;
+            gap: 16px;
+            color: #666;
+            font-size: 14px;
+        }
+        /* Markdown 正文区域 */
+        .markdown-body {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .markdown-body p {
+            margin: 16px 0;
+            font-size: 1.15rem;
+            color: #2c3e50;
+        }
+        .markdown-body h1 {
+            font-size: 24px;
+            margin: 32px 0 16px;
+            border-left: 4px solid #409eff;
+            padding-left: 12px;
+        }
+        .markdown-body h2 {
+            font-size: 20px;
+            margin: 28px 0 14px;
+            color: #333;
+        }
+        .markdown-body strong {
+            color: #000;
+            font-weight: 600;
+        }
+        .markdown-body code {
+            background: #f5f7fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #e63946;
+        }
+        .markdown-body ul {
+            padding-left: 24px;
+            margin: 12px 0;
+        }
+        .markdown-body li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="blog-container">
+    <!-- 博客头部：对应截图Front Matter区域 -->
+    <header class="blog-header">
+        <h1 class="blog-title">✨ 用 Markdown 写博客</h1>
+        <div class="blog-meta">
+            <span><i>📅</i> 2026-07-07 · 北京</span>
+            <span><i>⏱️</i> 6 分钟阅读</span>
+            <span><i>🏷️</i> #Markdown #博客 #设计</span>
+        </div>
+    </header>
+
+    <!-- Markdown渲染正文，和截图结构完全一致 -->
+    <main class="markdown-body">
+        <!-- 引言段落 -->
+        <p style="font-size:1.15rem; font-weight:400; color:#2c3e50;">
+            <strong>✨ 你好，世界。</strong> 这是一个完全使用 <code>Markdown</code> 构建的博客页面。
+            没有复杂的框架，只有干净的内容与舒适的排版。
+        </p >
+
+        <!-- 一级标题 -->
+        <h1 id="why-markdown">为什么选择 Markdown?</h1>
+        <p>
+            Markdown 是一种轻量级标记语言，它允许你用易读易写的纯文本格式编写文档，然后转换为结构化的 HTML。
+            对于博客作者、程序员和技术写作者来说，Markdown 是 <strong>效率与优雅</strong> 的代名词。
+        </p >
+
+        <!-- 二级标题 -->
+        <h2 id="core-features">核心优势</h2>
+        <ul>
+            <li>语法极简，上手零成本，不用记忆复杂标签</li>
+            <li>纯文本存储，跨平台兼容，所有编辑器都能打开</li>
+            <li>支持代码块、表格、图片、引用，适配技术写作</li>
+            <li>各类静态博客框架(Hexo/Jekyll/VitePress)原生支持</li>
+            <li>导出PDF、Word、HTML格式无压力</li>
+        </ul>
+
+        <h2>个人博客写作心得</h2>
+        <p>
+            坚持写博客本质是沉淀自己的思路，把碎片化的知识点整理成体系。
+            不需要追求长篇大论，记录日常学习、生活感悟都很有价值。
+        </p >
+    </main>
+</div>
+</body>
+</html>
